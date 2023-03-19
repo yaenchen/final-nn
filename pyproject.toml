@@ -4,7 +4,6 @@ requires = [
 	"python_version >= '3.9'"
 	]
 build-backend = "flit_core.buildapi"
-dynamic=["version"]
 
 [project]
 name = "models"
@@ -12,10 +11,7 @@ authors = [{name = "Yaen Chen", email = "yaen.chen@ucsf.edu"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
-dependencies = ["numpy", "pytest", "typing"]
-
-[tool.coverage.run]
-source = ["nn"] # parent directory of package
+dependencies = ["numpy", "pytest", "typing", "scikit_learn", "matplotlib", "pandas"]
 
 [project.urls]
 Home = "https://github.com/yaenchen/final-nn"
